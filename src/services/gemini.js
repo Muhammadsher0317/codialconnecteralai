@@ -2,7 +2,7 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 
 const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
 
-if (!apiKey || apiKey === "AIzaSyBjUhPa2FacAtkiD3ISspTOb1eLNUjXb-Y") {
+if (!apiKey) {
   throw new Error(
     "Gemini API kaliti o'rnatilmagan. Iltimos, .env faylida VITE_GEMINI_API_KEY ni haqiqiy kalitga o'zgartiring.",
   );
