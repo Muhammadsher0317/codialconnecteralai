@@ -1,0 +1,122 @@
+:root {
+  color-scheme: light;
+  font-family: "Plus Jakarta Sans", Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body,
+#root {
+  min-height: 100vh;
+  font-family: "Plus Jakarta Sans", Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, rgba(16, 185, 129, 0.15), transparent 22%),
+    linear-gradient(180deg, #f8fafc 0%, #e2e8f0 100%);
+  color: #0f172a;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app-shell {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 32px 24px;
+}
+
+.hero-card {
+  padding: 32px;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid rgba(30, 58, 138, 0.08);
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.08);
+}
+
+.hero-card h1,
+.hero-card p {
+  margin: 0;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.section-card,
+.stats-card {
+  padding: 32px;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(30, 58, 138, 0.08);
+  box-shadow: 0 18px 38px rgba(15, 23, 42, 0.08);
+}
+
+.info-grid,
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.info-card,
+.stat-card {
+  background: rgba(249, 250, 251, 0.98);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 20px;
+  padding: 22px;
+}
+
+.stat-card {
+  text-align: center;
+}
+
+.hero-highlight {
+  color: #0f766e;
+}
+
+.MuiButton-containedSuccess {
+  background-color: #0f766e;
+  color: #f8fafc;
+}
+
+.MuiButton-containedSuccess:hover {
+  background-color: #115e59;
+}
+
+.MuiButton-outlined {
+  border-color: rgba(30, 58, 138, 0.35);
+  color: #1e3a8a;
+}
+
+.MuiButton-outlined:hover {
+  border-color: rgba(30, 58, 138, 0.55);
+}
+
+@media (max-width: 900px) {
+  .info-grid,
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .app-shell {
+    padding: 24px 16px;
+  }
+
+  .hero-card,
+  .section-card,
+  .stats-card {
+    padding: 24px;
+  }
+}
